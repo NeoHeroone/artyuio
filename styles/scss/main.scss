@@ -24,6 +24,7 @@
   gap: 10px;
   justify-content: start;
   margin-bottom: 21px;
+  margin-top: 21px;
 }
 
 .btn-content {
@@ -346,49 +347,77 @@ main {
               background: #ff0000;
             }
 
-            .diliked {
-              left: 130px;
-            }
-
-            .aksiyaimg {
-              left: 140px;
-            }
-
-            .pepseimg {
-              left: 105px;
-            }
-
-            img {
+            .liked {
               position: relative;
-              top: -300px;
-              left: 120px;
+              top: -320px;
+              left: 200px;
               cursor: pointer;
+              
+              &:hover{
+                background: var(--aksiya);
+                border-radius: 100%;
+                path{
+                  fill: white;
+                }
+              }
+
+              &.aksiyaimg {
+                left: 145px;
+                top: -300px;
+              }
+
+              &.diliked {
+                left: 140px;
+                top: -300px;
+              }
+
+              &.pepseimg {
+                left: 200px;
+              }
+
+              &.vaqtincha {
+                left: -10px;
+              }
+
+              &.nimadir{
+                left: 195px;
+                top: -300px;
+              }
             }
           }
         }
       }
     }
-  }
 
-  .section2{
-    .container{
-      .section-cards_content{
-        .section-card{
-          .position-content{
-            .vaqtincha{
-              left: -10px;
+    &.section2 {
+      .container {
+        .section-cards_content {
+          .section-card {
+            .position-content {
+              
+              .vaqtinchalik {
+                background: #f4488d;
+              }
             }
-            .vaqtinchalik{
-              background: #F4488D;
+            .card-title {
+              height: 30px;
+              overflow: hidden;
+              display: -webkit-box;
+              -webkit-box-orient: horizontal;
             }
-          }
-          .card-title{
-            height: 30px;
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: horizontal;
           }
         }
+      }
+    }
+
+    &.img-section{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        object-fit: cover;
+        cursor: pointer;
+        padding: 16px 0;
       }
     }
   }

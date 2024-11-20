@@ -19,6 +19,7 @@
   gap: 10px;
   justify-content: start;
   margin-bottom: 21px;
+  margin-top: 21px;
 }
 
 .btn-content {
@@ -345,30 +346,54 @@ main section .container .section-cards_content .section-card .position-content .
 main section .container .section-cards_content .section-card .position-content .disport {
   background: #ff0000;
 }
-main section .container .section-cards_content .section-card .position-content .diliked {
-  left: 130px;
-}
-main section .container .section-cards_content .section-card .position-content .aksiyaimg {
-  left: 140px;
-}
-main section .container .section-cards_content .section-card .position-content .pepseimg {
-  left: 105px;
-}
-main section .container .section-cards_content .section-card .position-content img {
+main section .container .section-cards_content .section-card .position-content .liked {
   position: relative;
-  top: -300px;
-  left: 120px;
+  top: -320px;
+  left: 200px;
   cursor: pointer;
 }
-main .section2 .container .section-cards_content .section-card .position-content .vaqtincha {
+main section .container .section-cards_content .section-card .position-content .liked:hover {
+  background: var(--aksiya);
+  border-radius: 100%;
+}
+main section .container .section-cards_content .section-card .position-content .liked:hover path {
+  fill: white;
+}
+main section .container .section-cards_content .section-card .position-content .liked.aksiyaimg {
+  left: 145px;
+  top: -300px;
+}
+main section .container .section-cards_content .section-card .position-content .liked.diliked {
+  left: 140px;
+  top: -300px;
+}
+main section .container .section-cards_content .section-card .position-content .liked.pepseimg {
+  left: 200px;
+}
+main section .container .section-cards_content .section-card .position-content .liked.vaqtincha {
   left: -10px;
 }
-main .section2 .container .section-cards_content .section-card .position-content .vaqtinchalik {
-  background: #F4488D;
+main section .container .section-cards_content .section-card .position-content .liked.nimadir {
+  left: 195px;
+  top: -300px;
 }
-main .section2 .container .section-cards_content .section-card .card-title {
+main section.section2 .container .section-cards_content .section-card .position-content .vaqtinchalik {
+  background: #f4488d;
+}
+main section.section2 .container .section-cards_content .section-card .card-title {
   height: 30px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
+}
+main section.img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main section.img-section img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  padding: 16px 0;
 }/*# sourceMappingURL=main.css.map */
